@@ -1,0 +1,6 @@
+2025-07-30 12:49:13,488 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-30 12:49:13,734 - INFO - Use pytorch device: cpu
+2025-07-30 14:08:12,165 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-30 14:08:12,643 - INFO - Use pytorch device: cpu
+2025-07-30 14:08:12,678 - INFO - Flash Attention 2 not available - using standard attention
+2025-07-30 14:08:12,678 - INFO - CUDA is NOT available. Running on CPU only.

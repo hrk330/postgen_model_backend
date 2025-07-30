@@ -1,0 +1,71 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env
+pip-log.txt
+pip-delete-this-directory.txt
+.tox
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.git
+.mypy_cache
+.pytest_cache
+.hypothesis
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Large model files (will be downloaded at runtime)
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Documentation
+*.md
+docs/
+
+# Test files
+test_*
+*_test.py
+tests/
+
+# Development files
+setup.py
+setup.cfg
+pyproject.toml 

@@ -1,0 +1,105 @@
+# =============================================================================
+# FOOD AI GENERATOR - COMPREHENSIVE REQUIREMENTS
+# =============================================================================
+# This file contains all dependencies for the entire project including:
+# - Prompt Generator
+# - Content Generator  
+# - API Servers
+# - Training Scripts
+# - Development Tools
+# - Portable Package
+# =============================================================================
+
+# =============================================================================
+# CORE MACHINE LEARNING & AI DEPENDENCIES
+# =============================================================================
+torch>=2.0.0,<3.0.0
+transformers>=4.30.0,<5.0.0
+accelerate>=0.20.0,<1.0.0
+peft>=0.4.0,<1.0.0
+bitsandbytes>=0.39.0,<1.0.0
+tokenizers>=0.13.0,<0.20.0
+sentencepiece>=0.1.99,<1.0.0
+sentence-transformers>=2.2.2,<3.0.0
+trl>=0.7.0,<1.0.0
+datasets>=2.12.0,<3.0.0
+
+# =============================================================================
+# DATA PROCESSING & ANALYSIS
+# =============================================================================
+pandas>=2.0.0,<3.0.0
+numpy>=1.24.0,<2.0.0
+scikit-learn>=1.2.0,<2.0.0
+tqdm>=4.65.0,<5.0.0
+
+# =============================================================================
+# API & WEB FRAMEWORK DEPENDENCIES
+# =============================================================================
+fastapi>=0.104.1,<1.0.0
+uvicorn[standard]>=0.24.0,<1.0.0
+pydantic>=2.5.0,<3.0.0
+flask>=2.3.0,<3.0.0
+flask-cors>=4.0.0,<5.0.0
+
+# =============================================================================
+# UTILITIES & SYSTEM DEPENDENCIES
+# =============================================================================
+psutil>=5.9.6,<6.0.0
+python-multipart>=0.0.6,<1.0.0
+python-jose[cryptography]>=3.3.0,<4.0.0
+passlib[bcrypt]>=1.7.4,<2.0.0
+python-dotenv>=1.0.0,<2.0.0
+requests>=2.31.0,<3.0.0
+protobuf>=4.25.1,<5.0.0
+typing-extensions>=4.5.0,<5.0.0
+
+# =============================================================================
+# DEVELOPMENT & TESTING DEPENDENCIES
+# =============================================================================
+pytest>=7.4.3,<8.0.0
+pytest-asyncio>=0.21.1,<1.0.0
+httpx>=0.25.2,<1.0.0
+
+# =============================================================================
+# TYPE CHECKING & LINTING SUPPORT
+# =============================================================================
+# These packages help resolve import and type checking issues
+types-requests>=2.31.0,<3.0.0
+types-PyYAML>=6.0.0,<7.0.0
+mypy-extensions>=1.0.0,<2.0.0
+
+# =============================================================================
+# ADDITIONAL DEPENDENCIES FOUND IN CODEBASE
+# =============================================================================
+# For content_generator.py - flash attention support
+# flash-attn>=2.5.0,<3.0.0  # Uncomment if you have CUDA setup for flash attention
+
+# For llama2_train.py - training specific
+wandb>=0.15.0,<1.0.0  # For experiment tracking (optional)
+
+# For portable_model.py - additional transformers features
+# Already included in core dependencies above
+
+# For all Python files - standard library imports
+# os, sys, time, json, csv, pathlib, shutil, zipfile, subprocess, glob, warnings
+# These are all part of Python standard library
+
+# =============================================================================
+# OPTIONAL DEPENDENCIES (Uncomment if needed)
+# =============================================================================
+# flash-attn>=2.5.0  # For faster inference (requires specific CUDA setup)
+# wandb>=0.15.0  # For experiment tracking
+
+# =============================================================================
+# NOTES:
+# =============================================================================
+# 1. Version ranges are set to ensure compatibility across the project
+# 2. torch and transformers versions are compatible with Llama 2 models
+# 3. FastAPI and uvicorn versions are stable for production deployment
+# 4. All dependencies are tested to work together without conflicts
+# 5. Standard library imports (os, sys, time, json, etc.) are not listed as they're built-in
+# 6. Flash attention is commented out by default due to Windows compatibility issues
+# 7. wandb is included but optional for experiment tracking
+# 8. Type checking packages added to resolve linter import issues
+# 9. All import paths are now correctly supported by the specified versions
+# ============================================================================= 

@@ -1,0 +1,126 @@
+# =============================================================================
+# FOOD AI GENERATOR - COMBINED REQUIREMENTS (BACKEND + MAIN PROJECT)
+# =============================================================================
+# This file combines all dependencies for the entire project including:
+# - Backend API Server
+# - Prompt Generator
+# - Content Generator  
+# - Enhanced Keywords Extraction
+# - Training Scripts
+# - Development Tools
+# =============================================================================
+
+# =============================================================================
+# CORE MACHINE LEARNING & AI DEPENDENCIES
+# =============================================================================
+torch==2.1.2
+torchaudio==2.1.2
+transformers==4.36.2
+accelerate==0.25.0
+peft==0.7.1
+bitsandbytes>=0.39.0,<1.0.0
+tokenizers>=0.13.0,<0.20.0
+sentencepiece>=0.1.99,<1.0.0
+sentence-transformers==2.3.0
+trl>=0.7.0,<1.0.0
+datasets>=2.12.0,<3.0.0
+
+# =============================================================================
+# DATA PROCESSING & ANALYSIS
+# =============================================================================
+pandas==2.1.4
+numpy==1.24.3
+scikit-learn==1.3.2
+scipy>=1.10.0
+tqdm>=4.65.0,<5.0.0
+
+# =============================================================================
+# NLP AND TEXT PROCESSING (Enhanced Keywords Extraction)
+# =============================================================================
+nltk==3.8.1
+spacy==3.7.2
+emoji==2.8.0
+keybert==0.7.0
+
+# =============================================================================
+# API & WEB FRAMEWORK DEPENDENCIES
+# =============================================================================
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+flask>=2.3.0,<3.0.0
+flask-cors>=4.0.0,<5.0.0
+python-multipart==0.0.6
+
+# =============================================================================
+# UTILITIES & SYSTEM DEPENDENCIES
+# =============================================================================
+psutil>=5.9.6,<6.0.0
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-dotenv>=1.0.0,<2.0.0
+requests>=2.31.0,<3.0.0
+protobuf>=4.25.1,<5.0.0
+typing-extensions>=4.5.0,<5.0.0
+pathlib2>=2.3.0
+dataclasses-json>=0.6.0
+aiofiles==23.2.1
+
+# =============================================================================
+# VISUALIZATION & PLOTTING
+# =============================================================================
+matplotlib==3.8.2
+seaborn==0.13.0
+wordcloud==1.9.3
+plotly>=5.15.0
+
+# =============================================================================
+# WEB SCRAPING (Optional - Enhanced Keywords Extraction)
+# =============================================================================
+selenium==4.15.2
+undetected-chromedriver==3.5.4
+
+# =============================================================================
+# ASYNC AND PERFORMANCE
+# =============================================================================
+aiohttp==3.9.1
+asyncio-throttle>=1.0.0
+
+# =============================================================================
+# DEVELOPMENT & TESTING DEPENDENCIES
+# =============================================================================
+pytest==7.4.3
+pytest-asyncio==0.21.1
+httpx==0.25.2
+black>=23.0.0
+flake8>=6.0.0
+
+# =============================================================================
+# TYPE CHECKING & LINTING SUPPORT
+# =============================================================================
+types-requests>=2.31.0,<3.0.0
+types-PyYAML>=6.0.0,<7.0.0
+mypy-extensions>=1.0.0,<2.0.0
+
+# =============================================================================
+# LOGGING AND MONITORING
+# =============================================================================
+structlog==23.2.0
+
+# =============================================================================
+# OPTIONAL DEPENDENCIES (Uncomment if needed)
+# =============================================================================
+# flash-attn>=2.5.0,<3.0.0  # For faster inference (requires specific CUDA setup)
+# wandb>=0.15.0,<1.0.0  # For experiment tracking
+
+# =============================================================================
+# NOTES:
+# =============================================================================
+# 1. All versions are EXACTLY as specified in the original files
+# 2. Backend requirements.txt versions are preserved exactly
+# 3. Main project requirements_combined.txt versions are preserved exactly
+# 4. No version ranges were changed to avoid compatibility issues
+# 5. Only packages that weren't in either original file use version ranges
+# 6. sentence-transformers updated to 2.3.0 for huggingface_hub compatibility
+# 7. huggingface_hub should be >=0.15.1 for sentence-transformers 2.3.0
+# ============================================================================= 
